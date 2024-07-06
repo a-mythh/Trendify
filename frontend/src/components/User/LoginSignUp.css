@@ -1,0 +1,225 @@
+.LoginSignUpContainer {
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary-background-color);
+	position: fixed;
+	top: 0%;
+	left: 0%;
+}
+
+.LoginSignUpBox {
+	background-color: var(--secondary-background-color);
+	width: 25vw;
+	height: 70vh;
+	border-radius: 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.login_signUp_toggle {
+	display: flex;
+	height: 3vmax;
+}
+
+.login_signUp_toggle > p {
+	color: var(--primary-background-color);
+	font: 300 1.2vmax var(--primary-heading-font);
+	transition: all 0.5s;
+	cursor: pointer;
+	display: grid;
+	place-content: center;
+	width: 100%;
+}
+
+.login_signUp_toggle > p:hover {
+	color: var(--primary-background-color);
+}
+
+.LoginSignUpBox > div > button {
+	background-color: var(--primary-background-color);
+	height: 3px;
+	width: 50%;
+	border: none;
+	transition: all 0.5s;
+}
+
+.loginForm,
+.signUpForm {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+	padding: 2vmax;
+	justify-content: center;
+	height: 70%;
+	transition: all 0.5s;
+}
+
+.signUpForm {
+	transform: translateY(-100%) translateX(-100vmax);
+}
+
+.loginForm > div,
+.signUpForm > div {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.loginForm > div > input,
+.signUpForm > div > input {
+	margin-bottom: 1.3vmax;
+	padding: 1vmax 3vmax;
+	padding-right: 1vmax;
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--primary-text-color);
+	font: 400 1vmax var(--secondary-heading-font);
+}
+
+.loginForm > div > svg,
+.signUpForm > div > svg {
+	margin-bottom: 1vmax;
+	position: absolute;
+	transform: translateX(1vmax);
+	font-size: 1.4vmax;
+	color: var(--secondary-text-color);
+}
+
+.loginForm > a {
+	text-decoration: none;
+	color: var(--secondary-text-color);
+	align-self: flex-end;
+	transition: all 0.5s;
+	font: 500 0.9vmax var(--primary-heading-font);
+}
+
+.loginForm > a:hover {
+	color: var(--primary-background-color);
+}
+
+#registerImage > img {
+	margin-bottom: 1.3vmax;
+	width: 3vmax;
+	border-radius: 100%;
+}
+
+#registerImage > input {
+	display: flex;
+	padding: 0;
+	margin-left: 1vmax;
+}
+
+#registerImage > input::file-selector-button {
+	cursor: pointer;
+	width: 100%;
+	height: 6vh;
+	border: none;
+	z-index: 2;
+	margin: 0%;
+	font: 400 0.8vmax var(--primary-heading-font);
+	transition: all 0.5s;
+	padding: 0 1vmax;
+	color: var(--secondary-text-color);
+	background-color: var(--primary-text-color);
+}
+
+#registerImage > input::file-selector-button:hover {
+	background-color: var(--primary-background-color);
+	color: var(--primary-text-color);
+}
+
+.loginBtn,
+.signUpBtn {
+	border: none;
+	cursor: pointer;
+	color: white;
+	transition: all 0.5s;
+	background-color: var(--primary-background-color);
+	font: 500 1vmax var(--primary-heading-font);
+	border-radius: 10px;
+	padding: 0.6vmax 2vmax;
+	margin: 2vmax 0;
+	outline: none;
+}
+
+.loginBtn:hover,
+.signUpBtn:hover {
+	background-color: var(--primary-background-color);
+	opacity: 0.8;
+}
+
+.shiftToLeft {
+	transform: translateX(-100%);
+}
+
+.shiftToNeutral {
+	transform: translateX(0%);
+}
+
+.shiftToRight {
+	transform: translateX(100%);
+}
+
+.shiftToNeutralForm {
+	transform: translateX(0%) translateY(-100%);
+}
+
+@media screen and (max-width: 600px) {
+	.LoginSignUpBox {
+		width: 80vw;
+	}
+
+	.login_signUp_toggle {
+		height: 5vmax;
+	}
+
+	.login_signUp_toggle > p {
+		font-size: 1.8vmax;
+	}
+
+	.loginForm,
+	.signUpForm {
+		padding: 4vmax;
+	}
+
+	.loginForm > div > input,
+	.signUpForm > div > input {
+		margin-bottom: 2vmax;
+		border-radius: 15px;
+		padding: 2vmax 5vmax;
+		font-size: 1.7vmax;
+	}
+
+	.loginForm > div > svg,
+	.signUpForm > div > svg {
+		transform: translateX(1.5vmax);
+		margin-bottom: 2vmax;
+		font-size: 2.2vmax;
+	}
+
+	.loginForm > a {
+		font-size: 1.6vmax;
+	}
+
+	#registerImage > img {
+		width: 5vmax;
+	}
+
+	#registerImage > input::file-selector-button {
+		height: 5vh;
+		font-size: 1.5vmax;
+	}
+
+	.loginBtn,
+	.signUpBtn {
+		padding: 1vmax 3vmax;
+		font-size: 1.8vmax;
+	}
+}

@@ -1,0 +1,40 @@
+@import url(https://db.onlinewebfonts.com/c/3906224246f0b3dde8c3700ab84067a2?family=Croogla+4F);
+
+:root {
+	/* colors */
+	--primary-background-color: #9220fcff;
+	--secondary-background-color: #fff6ff;
+	--primary-background-color-gradient: linear-gradient(
+		to top right,
+		#8302fcff,
+		#a13ffdff
+	);
+	--primary-button-color: #f8f2ff;
+	--primary-text-color: #e9d3fe;
+	--secondary-text-color: #1d1b1b;
+	--tertiary-text-color: #d9534f;
+	--primary-text-hover-color: #f8f2ff;
+	--primary-text-black: #1d1b1b;
+	--star-background-color: #e9d3fe;
+	--star-foreground-color: #ffd700;
+
+	/* fonts */
+	--logo-font: "Croogla 4F";
+	--primary-heading-font: "Roboto";
+	--secondary-heading-font: "Inter";
+	--tertiary-heading-font: "Merriweather";
+	--primary-paragraph-font: "Verdana";
+	--secondary-paragraph-font: "Open Sans";
+	--primary-handwriting-font: "Kalam";
+	--secondary-handwriting-font: "Pacifico";
+	--primary-button-font: "Roboto";
+	--primary-link-font: "Verdana";
+}
+
+.greenColor {
+	color: green;
+}
+
+.redColor {
+	color: rgb(224, 54, 54);
+}

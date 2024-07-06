@@ -1,0 +1,18 @@
+.MultiStepConnector-line {
+  display: none !important;
+}
+
+.MultiStepConnector-root {
+  height: 1px;
+  background-color: white;
+}
+
+.MultiStepConnector-active,
+.MultiStepConnector-completed {
+  background-color: var(--primary-background-color);
+}
+
+.css-1hv8oq8-MuiStepLabel-label.Mui-completed {
+  color: white !important;
+  font-weight: 500 !important;
+}

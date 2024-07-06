@@ -1,0 +1,232 @@
+.emptyCart {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+
+	height: 50vh;
+	padding: 10vmax;
+}
+
+.emptyCart > svg {
+	font-size: 2.5vmax;
+	color: var(--primary-background-color);
+}
+
+.emptyCart > p {
+	margin: 0.5vmax;
+	font-size: 1.3vmax;
+}
+
+.emptyCart > a {
+	text-decoration: none;
+	border: 2px solid var(--primary-background-color);
+	cursor: pointer;
+	color: var(--primary-background-color);
+	transition: all 0.5s;
+	background-color: none;
+	font: 500 1.1vmax var(--primary-heading-font);
+	border-radius: 10px;
+	padding: 0.8vmax 2vmax;
+	margin: 2vmax 0;
+	outline: none;
+}
+
+.emptyCart > a:hover {
+	background-color: var(--primary-background-color);
+	color: white;
+}
+
+.cartPage {
+	padding: 5vmax;
+}
+
+.cartHeader {
+	background-color: var(--primary-background-color);
+	color: var(--primary-text-color);
+	width: 90%;
+	box-sizing: border-box;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 4fr 1fr 1fr;
+	font: 300 1vmax var(--primary-heading-font);
+	border-radius: 10px 10px 0 0;
+}
+
+.cartHeader > p {
+	margin: 10px;
+	text-align: center;
+}
+
+.cartContainer {
+	width: 90%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 4fr 1fr 1fr;
+	padding: 1vmax 0;
+}
+
+.cartInput {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 8vmax;
+}
+
+.cartInput > button {
+	width: 2.5vmax;
+	height: 2.5vmax;
+	border: none;
+	padding: 0.5vmax;
+	background-color: var(--primary-background-color);
+	border-radius: 50%;
+	color: white;
+	cursor: pointer;
+	transition: all 0.5s;
+	font: 500 1.2vmax var(--secondary-heading-font);
+}
+
+.cartInput > button:hover {
+	opacity: 0.7;
+}
+
+.cartInput > input {
+	background-color: var(--star-background-color);
+	border: none;
+	border-radius: 10px;
+	margin: 0.5vmax 0.8vmax;
+	padding: 0.5vmax;
+	width: 3vmax;
+	text-align: center;
+	outline: none;
+	font: 400 1vmax var(--primary-heading-font);
+	color: var(--secondary-text-color);
+}
+
+.cartSubtotal {
+	display: flex;
+	padding: 0.5vmax;
+	justify-content: flex-end;
+	font: 600 1.3vmax var(--primary-heading-font);
+	color: var(--tertiary-text-color);
+	box-sizing: border-box;
+	align-items: center;
+	height: 8vmax;
+}
+
+.cartTotal {
+	display: grid;
+	grid-template-columns: 2fr 1.2fr;
+}
+
+.cartTotalBox {
+	border-top: 3px solid var(--primary-background-color);
+	margin: 1vmax 4vmax;
+	box-sizing: border-box;
+	padding: 2vmax 0;
+	font: 600 1.4vmax var(--primary-heading-font);
+	display: flex;
+	justify-content: space-between;
+	color: var(--primary-background-color);
+}
+
+.placeOrderBtn {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0vmax 4vmax;
+}
+
+.placeOrderBtn > button {
+	border: none;
+	cursor: pointer;
+	color: white;
+	transition: all 0.5s;
+	background-color: var(--primary-background-color);
+	font: 500 1.1vmax var(--primary-heading-font);
+	border-radius: 10px;
+	padding: 0.8vmax 2vmax;
+	margin: 2vmax 0;
+	outline: none;
+}
+
+.placeOrderBtn > button:hover {
+	opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+	.emptyCart > svg {
+		font-size: 5vmax;
+	}
+
+	.emptyCart > p {
+		font-size: 2vmax;
+	}
+
+	.emptyCart > a {
+		font-size: 1.8vmax;
+	}
+
+	.cartPage {
+		padding: 1vmax;
+		min-height: 60vh;
+	}
+
+	.cartHeader {
+		width: 100%;
+		grid-template-columns: 3fr 3fr 1fr;
+		font-size: 1.4vmax;
+	}
+
+	.cartInput {
+		height: 20vmax;
+	}
+
+	.cartContainer {
+		margin: 0;
+		width: 100%;
+		grid-template-columns: 3fr 3fr 1fr;
+	}
+
+	.cartInput {
+		flex-direction: column;
+	}
+
+	.cartInput > input {
+		font-size: 1.8vmax;
+		width: 5vmax;
+		height: 3vmax;
+	}
+
+	.cartInput > button {
+		width: 3.5vmax;
+		height: 3.5vmax;
+		font-size: 2vmax;
+	}
+
+	.cartSubtotal {
+		height: 20vmax;
+		font-size: 2vmax;
+	}
+
+	.cartTotal {
+		display: grid;
+		grid-template-columns: 0fr 2fr;
+	}
+
+	.cartTotalBox {
+		margin: 0;
+		font-size: 2.3vmax;
+		padding: 1vmax;
+	}
+
+	.placeOrderBtn {
+		justify-content: center;
+	}
+
+	.placeOrderBtn > button {
+		font-size: 1.8vmax;
+		padding: 1.2vmax 2vmax;
+	}
+}

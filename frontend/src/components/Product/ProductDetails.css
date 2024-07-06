@@ -1,0 +1,328 @@
+.ProductDetails {
+	/* background-color: var(--secondary-background-color); */
+	width: 100vw;
+	max-width: 100%;
+	padding: 6vmax;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.ProductDetails > div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: normal;
+	padding: 2vmax;
+	box-sizing: border-box;
+}
+
+.ProductDetails > div:last-child {
+	align-items: flex-start;
+}
+
+.Carousel {
+	width: 40vmax;
+}
+
+.CarouselImage {
+	border-radius: 10px;
+	width: 40vmax;
+}
+
+.detailsBlock-1 > h2 {
+	color: var(--secondary-text-color);
+	font: 500 2vmax var(--primary-heading-font);
+}
+
+.detailsBlock-1 > p {
+	color: var(--secondary-text-color);
+	opacity: 0.7;
+	font: 200 1.2vmax var(--secondary-heading-font);
+	padding: 0.5vmax 0;
+}
+
+.detailsBlock-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(0, 0, 0, 0.489);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.489);
+	width: 40%;
+	margin: 1.5vmax 0;
+	padding: 0.5vmax 0;
+}
+
+.detailsBlock-2 > span {
+	font-size: 1.2vmax;
+	font-family: var(--secondary-heading-font);
+	color: var(--secondary-text-color);
+	opacity: 0.6;
+	margin-left: 1vmax;
+}
+
+.detailsBlock-3 {
+	width: 70%;
+}
+
+.detailsBlock-3 > h1 {
+	color: var(--tertiary-text-color);
+	font: 600 2vmax var(--secondary-heading-font);
+	margin: 1.5vmax 0;
+}
+
+.detailsBlock-3-1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.detailsBlock-3-1-1 > button {
+	width: 2.5vmax;
+	height: 2.5vmax;
+	border: none;
+	padding: 0.5vmax;
+	background-color: var(--primary-background-color);
+	border-radius: 50%;
+	color: white;
+	cursor: pointer;
+	transition: all 0.5s;
+	font: 500 1.2vmax var(--secondary-heading-font);
+}
+
+.detailsBlock-3-1-1 > button:hover {
+	background-color: var(--primary-background-color);
+	opacity: 0.7;
+}
+
+.detailsBlock-3-1-1 > input {
+	background-color: var(--star-background-color);
+	border: none;
+	border-radius: 10px;
+	margin: 0.5vmax 0.8vmax;
+	padding: 0.5vmax;
+	width: 4vmax;
+	text-align: center;
+	outline: none;
+	font: 400 1.5vmax var(--primary-heading-font);
+	color: var(--secondary-text-color);
+}
+
+.detailsBlock-3-1 > button:last-child {
+	border: none;
+	cursor: pointer;
+	color: white;
+	transition: all 0.5s;
+	background-color: var(--primary-background-color);
+	font: 500 1.5vmax var(--primary-heading-font);
+	border-radius: 10px;
+	padding: 0.5vmax 2vmax;
+	margin: 1vmax;
+	outline: none;
+}
+
+.detailsBlock-3-1 > button:last-child:hover {
+	background-color: var(--primary-background-color);
+	opacity: 0.8;
+}
+
+.detailsBlock-3 > p {
+	padding: 1vmax 0;
+	color: var(--secondary-text-color);
+	font: 500 1.4vmax var(--primary-heading-font);
+	margin: 1.5vmax 0;
+}
+
+.detailsBlock-4 {
+	color: var(--secondary-text-color);
+	font: 500 1.6vmax var(--primary-heading-font);
+}
+
+.detailsBlock-4 > p {
+	margin: 1vmax 0;
+	padding: 1vmax 1.5vmax;
+	font: 300 1.3vmax var(--secondary-heading-font);
+	border-radius: 10px;
+	background-color: var(--star-background-color);
+}
+
+.submitReview {
+	border: none;
+	cursor: pointer;
+	color: white;
+	transition: all 0.5s;
+	background-color: var(--primary-background-color);
+	font: 500 1.5vmax var(--primary-heading-font);
+	border-radius: 10px;
+	padding: 0.8vmax 2vmax;
+	margin: 2vmax 0;
+	outline: none;
+}
+
+.submitReview:hover {
+	background-color: var(--primary-background-color);
+	opacity: 0.7;
+}
+
+.reviewHeading {
+	color: var(--secondary-text-color);
+	font: 500 1.6vmax var(--primary-heading-font);
+	text-align: center;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.489);
+	padding: 0.8vmax;
+	width: 6vmax;
+	margin: auto;
+	margin-bottom: 4vmax;
+}
+
+.reviews {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.reviewCard {
+	flex: none;
+
+	background-color: var(--secondary-background-color);
+	box-shadow: 0 0 5px rgba(203, 168, 220, 0.788);
+	border: none;
+	border-radius: 10px;
+	width: 30vmax;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1vmax;
+	padding: 3vmax;
+	transition: all 0.5s;
+}
+
+.reviewCard:hover {
+	box-shadow: 0 0 5px rgba(164, 119, 186, 0.888);
+	transform: translateY(-1vmax);
+}
+
+.reviewCard > img {
+	width: 5vmax;
+	margin-bottom: 1vmax;
+}
+
+.reviewCard > p {
+	color: var(--secondary-text-color);
+	font: 500 1.2vmax var(--tertiary-heading-font);
+}
+
+.reviewCard > span {
+	border: none;
+	margin: 1vmax 0;
+	padding: 1vmax 1.2vmax;
+	border-radius: 10px;
+	background-color: var(--star-background-color);
+	color: var(--secondary-text-color);
+	font: 300 1.2vmax var(--secondary-paragraph-font);
+}
+
+.noReviews {
+	font: 400 1.4vmax var(--secondary-heading-font);
+	text-align: center;
+	background-color: var(--star-background-color);
+	width: 30vmax;
+	margin: auto;
+	padding: 1vmax;
+	border-radius: 10px;
+	color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 600px) {
+	.ProductDetails {
+		flex-direction: column;
+		height: unset;
+	}
+
+	.ProductDetails > div:last-child {
+		align-items: center;
+	}
+
+	.Carousel {
+		align-self: center;
+		width: 30vmax;
+	}
+
+	.CarouselImage {
+		width: 30vmax;
+	}
+
+	.detailsBlock-1 > h2 {
+		text-align: center;
+		font-size: larger;
+	}
+
+	.detailsBlock-1 > p {
+		text-align: center;
+		font-size: 1.3vmax;
+	}
+
+	.detailsBlock-2 {
+		width: 55%;
+	}
+
+	.detailsBlock-3 > h1 {
+		text-align: center;
+		font-size: 2.2vmax;
+	}
+
+	.detailsBlock-3-1 {
+		flex-direction: column;
+	}
+
+	.detailsBlock-3-1-1 {
+		padding: 1vmax 0;
+	}
+
+	.detailsBlock-3-1-1 > button {
+		width: 4vmax;
+		height: 4vmax;
+		font-size: larger;
+	}
+
+	.detailsBlock-3-1-1 > input {
+		padding: 1.5vmax;
+		width: 4.5vmax;
+		font-size: medium;
+	}
+
+	.detailsBlock-3-1 > button:last-child {
+		font-size: 1.8vmax;
+		padding: 1.2vmax 2vmax;
+		margin: 1.5vmax;
+	}
+
+	.detailsBlock-3 > p {
+		text-align: center;
+		font-size: 1.8vmax;
+	}
+
+	.detailsBlock-4 {
+		margin: 1.5vmax 0;
+		font-size: 2vmax;
+	}
+
+	.detailsBlock-4 > p {
+		font-size: 1.8vmax;
+		padding: 1.8vmax 2vmax;
+	}
+
+	.submitReview {
+		font-size: 1.8vmax;
+		padding: 1.2vmax 2vmax;
+		margin: 1.5vmax;
+	}
+
+	.reviewCard > p {
+		font-size: 1.4vmax;
+	}
+
+	.reviewCard > span {
+		font-size: 1.4vmax;
+	}
+}

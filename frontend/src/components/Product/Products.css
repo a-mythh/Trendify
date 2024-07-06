@@ -1,0 +1,134 @@
+.productHeading {
+  margin: 2vmax auto;
+  width: 10vw;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.489);
+  padding: 0.8vmax;
+  color: var(--secondary-text-color);
+  font: 500 1.6vmax var(--primary-heading-font);
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: var(--star-background-color);
+  list-style: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9vmax 1.3vmax;
+  margin: 0.3vmax;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.page-item:first-child {
+  margin-right: 1vmax;
+}
+
+.page-item:last-child {
+  margin-left: 1vmax;
+}
+
+.page-link {
+  text-decoration: none;
+  font: 400 1vmax var(--primary-heading-font);
+  color: var(--secondary-text-color);
+  transition: all 0.5s;
+}
+
+.page-item:hover {
+  background-color: var(--primary-background-color);
+  opacity: 0.7;
+}
+
+.page-item:hover .page-link {
+  color: var(--primary-text-color);
+}
+
+.pageItemsActive {
+  background-color: var(--primary-background-color);
+}
+
+.pageLinkActive {
+  color: white;
+}
+
+.filterBox {
+  width: 10vmax;
+  position: absolute;
+  top: 10vmax;
+  left: 2vmax;
+}
+
+
+.categories-typography {
+  border-top: 2px solid var(--primary-text-color);
+  padding-top: 0.8vmax;
+}
+
+.categoryBox {
+  padding: 0%;
+  border-bottom: 2px solid var(--primary-text-color);
+  padding-bottom: 0.8vmax;
+  margin-bottom: 0.8vmax;
+}
+
+.category-link {
+  list-style: none;
+  color: var(--secondary-text-color);
+  font: 500 1vmax var(--secondary-heading-font);
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0.1vmax 0; 
+}
+
+.category-link:hover {
+  font-weight: 600;
+  color: var(--primary-background-color);
+}
+
+.filterBox > fieldset {
+  border: 2px solid var(--primary-background-color);
+  border-radius: 10px;
+  padding: 1vmax 1.2vmax;
+}
+
+@media screen and (max-width: 600px) {
+  .filterBox {
+    width: 20vmax;
+    position: static;
+    margin: auto;
+  }
+
+  .page-link {
+    font-size: 1.5vmax;
+  }
+
+  .category-link {
+    font-size: 1.5vmax;
+  }
+
+  .filterBox > fieldset {
+    text-align: center;
+    padding: 1vmax 2.5vmax;
+  }
+}
